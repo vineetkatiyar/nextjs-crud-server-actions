@@ -1,6 +1,6 @@
 import { EditBlogForm } from "@/app/blog/[id]/blog-form";
 import { getBlogById } from "@/prisma-db";
-import { Blog } from "@/app/blog/blog-details";
+import { Blog } from "@/app/blog/page";
 
 import { notFound } from "next/navigation";
 

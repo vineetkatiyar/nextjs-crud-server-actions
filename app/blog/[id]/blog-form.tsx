@@ -5,15 +5,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { editBlogData, FormState } from "@/actions/blog";
 import { useActionState } from "react";
-import { Blog } from "@/components/product-card";
 import Form from "next/form";
+import { Blog } from "@/app/blog/page";
 
 export function EditBlogForm({ blog }: { blog: Blog }) {
   const initialState: FormState = {
     errors: {},
   };
 
-  const editBlogWithId = editBlogData.bind(null, blog.id)
+  const editBlogWithId = editBlogData.bind(null, blog.id);
 
   const [state, formAction, isPending] = useActionState(
     editBlogWithId,

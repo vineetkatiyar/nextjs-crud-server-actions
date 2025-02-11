@@ -24,7 +24,7 @@ export function BlogDetails({ blogs }: { blogs: Blog[] }) {
   };
 
   return (
-    <div className="">
+    <div className=" ">
       <ul className="space-y-5 max-w-3xl p-10">
         {optimisticBlogs.map((blog) => (
           <li className="bg-green-100 p-10 space-y-3 rounded-md" key={blog.id}>

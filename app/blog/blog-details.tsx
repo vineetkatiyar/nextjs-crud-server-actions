@@ -24,8 +24,9 @@ export function BlogDetails({ blogs }: { blogs: Blog[] }) {
   };
 
   return (
-    <div className=" ">
-      <ul className="space-y-5 max-w-3xl p-10">
+    <div className="w-full">
+      <h1 className="text-3xl font-bold text-center mt-5">Blogs</h1>
+      <ul className="space-y-5 p-10">
         {optimisticBlogs.map((blog) => (
           <li className="bg-green-100 p-10 space-y-3 rounded-md" key={blog.id}>
             <h2 className="font-bold text-2xl text-black">
